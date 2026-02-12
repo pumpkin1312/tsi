@@ -1,0 +1,32 @@
+header{
+    /* background-color:lightblue; */
+    background-image: url(/cloud_dark.jpg);
+    background-position: center;
+    background-size: cover;
+    color:aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:95%;
+}
+
+.headerSearch, .headerLogin{
+    display: flex;
+}
+
+.headerElem, .login{
+    padding: 12px;
+}
+
+.headerElem :hover, .login :hover{
+    text-decoration: underline;
+}
+
+.login{
+    border: solid 2px aliceblue;
+    border-radius: 20%;
+}

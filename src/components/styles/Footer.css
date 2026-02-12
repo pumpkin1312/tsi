@@ -1,0 +1,23 @@
+footer{
+    /* background-color:lightblue; */
+    /* background-image: url(/cloud_dark.jpg);
+    background-position:bottom;
+    background-size: cover; */
+    padding: 35px;
+    bottom: 0;
+    left:0;
+    width: 96%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:fixed;
+}
+
+.footerTitle{
+    text-decoration: underline;
+}
+
+.footerElem :hover{
+    text-decoration: underline;
+}
