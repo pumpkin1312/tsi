@@ -1,14 +1,18 @@
 header{
     /* background-color:lightblue; */
-    background-image: url(/cloud_dark.jpg);
+    /* background-image: url(/cloud_dark.jpg); */
+    background-image: url(/cloud.jpg);
     background-position: center;
     background-size: cover;
+
     color:aliceblue;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 45px;
-    position:fixed;
+    position:sticky;
+    /* position:fixed; */
     top:0;
     left:0;
     width:95%;

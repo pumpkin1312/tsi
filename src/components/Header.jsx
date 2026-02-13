@@ -1,23 +1,26 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import './styles/Header.css'
-import './styles/Home.css'
+// import './styles/Header.css'
+// import './styles/Home.css'
 
 
 export default class Header extends Component{
     render(){
         return (
-            <header>
-                <h1 class="title"><Link to='/'>Квиз-сайт</Link></h1>
-                <div class="headerSearch">
-                    <h3 class="headerElem"><Link to="/catalog">Каталог</Link></h3>
-                    <h3 class="headerElem"><Link to="/rating">Рейтинг игроков</Link></h3>
-                    <h3 class="headerElem"><Link to="/creator">Создание</Link></h3>
+            <header className='font-["Alegreya"] flex justify-between sticky items-center top-0 p-[45px] w-[100%] bg-[url(/cloud.jpg)] border-5 border-solid border-[#FEEFC8] text-[#19232B]'>
+                <h1 className='text-4xl'><Link to='/'>Квиз-сайт</Link></h1>
+
+                <div className='flex font-medium'>
+                    <h3 className='p-[15px] text-xl'><Link to="/catalog">Каталог</Link></h3>
+                    <h3 className='p-[15px] text-xl'><Link to="/rating">Рейтинг игроков</Link></h3>
+                    <h3 className='p-[15px] text-xl'><Link to="/creator">Создание</Link></h3>
                 </div>
-                <div class="headerLogin">
-                    <h2 class="headerElem"><Link to="/register">Регистрация</Link></h2>
-                    <h2 class="login"><Link to="/login">Вход</Link></h2>
+
+                <div className='flex'>
+                    <h2 className='p-[15px] text-2xl'><Link to="/register">Регистрация</Link></h2>
+                    <h2 className='p-[12px] text-2xl border-2 border-solid border-inherit rounded-[20%]'><Link to="/login">Вход</Link></h2>
                 </div>
+                
             </header>
         )
     }
